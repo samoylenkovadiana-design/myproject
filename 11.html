@@ -1,0 +1,88 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма опитування</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 2px solid #999;
+        }
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        label {
+            font-size: 18px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            padding: 5px;
+            margin: 8px 0;
+            width: 250px;
+        }
+        .block {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 18px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Контактна інформація -->
+    <fieldset>
+        <legend>Контактна інформація</legend>
+
+        <div class="block">
+            <label>Ім'я: </label>
+            <input type="text" placeholder="Enter Name">
+        </div>
+
+        <div class="block">
+            <label>Телефон: </label>
+            <input type="tel" placeholder="Enter Tel">
+        </div>
+
+        <div class="block">
+            <label>E-mail: </label>
+            <input type="email" placeholder="Enter Email">
+        </div>
+    </fieldset>
+
+    <!-- Вподобання -->
+    <fieldset>
+        <legend>Вподобання</legend>
+
+        <div class="block">
+            <input type="checkbox"> YouTube <br>
+            <input type="checkbox"> TikTok <br>
+            <input type="checkbox"> Instagram <br>
+            <input type="checkbox"> Facebook
+        </div>
+    </fieldset>
+
+    <!-- Операційна система -->
+    <fieldset>
+        <legend>Операційна система</legend>
+
+        <div class="block">
+            <input type="radio" name="os"> Windows <br>
+            <input type="radio" name="os"> Macintosh <br>
+            <input type="radio" name="os"> Android <br>
+            <input type="radio" name="os"> iOS
+        </div>
+    </fieldset>
+
+    <button type="submit">Надіслати</button>
+
+</body>
+</html>
